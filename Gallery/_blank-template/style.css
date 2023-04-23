@@ -1,0 +1,73 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#title{
+  font-family: 'Castoro Titling', cursive;
+  text-align: center;
+  margin-top0px;
+  font-size:50px;
+  position: relative;
+  padding-top:50px;
+  padding-bottom:100px;
+  
+  background-color: rgb(229, 229, 191);
+}
+
+
+.project{
+  background-color:rgb(255, 255, 253);
+ position:relative;
+ margin:50px;
+
+}
+
+.project img{
+  /* margin:80px; */
+  width:320px;
+  /* height:auto; */
+}
+
+a:hover{
+  color:rgb(143, 180, 238);
+}
+
+#text1{
+  background-color: rgb(240, 234, 234);
+  margin-top:30px;
+  font-family: 'Raleway', sans-serif;
+  font-size:30px;
+  position: absolute;
+  top: 1%;
+  left: 380px;
+
+}
+
+
+#content{
+  
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  line-height: 50px;
+  color:darkslategray;
+  margin-top:10px;
+  font-size:20px;
+  position: absolute;
+  top: 40%;
+  left: 450px;
+}
+
+#more{
+  font-family: 'Raleway', sans-serif;
+  margin-top:100px;
+  margin-bottom:100px;
+  font-size:30px;
+  position: relative;
+  top: 1%;
+  text-align: center;
+}
