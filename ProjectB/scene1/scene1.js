@@ -201,9 +201,6 @@ function draw() {
 
 function mousePressed() {
   userStartAudio();
-}
-
-function mousePressed() {
   textAppear = true;
   if (pressAble == true) {
     if (mouseX - x > 180) {
