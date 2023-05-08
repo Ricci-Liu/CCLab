@@ -12,7 +12,7 @@ let scrollFour = document.getElementsByClassName("scene4")[0];
 let scrollFive = document.getElementsByClassName("scene5")[0];
 let scrollSix = document.getElementsByClassName("scene6")[0];
 let scrollEight = document.getElementsByClassName("scene8")[0];
-let scrollNine = document.getElementById('end');
+let scrollNine = document.getElementById('quote');
 
 let able2 = true;
 let able4 = true;

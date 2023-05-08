@@ -134,8 +134,18 @@ h2 {
 }
 
 h3 {
-    margin: 30% 5%;
+    margin: 15% 5%;
     margin-bottom: 300px;
+    font-family: 'Darumadrop One', cursive;
+    letter-spacing: 10px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+#quote {
+    margin: 20%;
+    margin-bottom: 200px;
     font-family: 'Darumadrop One', cursive;
     letter-spacing: 10px;
     text-align: center;

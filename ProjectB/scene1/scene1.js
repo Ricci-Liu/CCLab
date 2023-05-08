@@ -102,7 +102,7 @@ function draw() {
       textSize(25);
       textFont(myFont);
       fill(100);
-      text('Move around and see what happens!', width / 2 - 370, height / 2 + 30);
+      text('Move around and see what happens!', width / 2 - 350, height / 2 + 30);
     }
 
     ellipse(x + imageSize / 2.5, height * 3 / 4 + 30 + 100, shadow, 30);

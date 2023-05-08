@@ -208,7 +208,7 @@ function draw() {
 
     pop();
 
-    if (x < -800) {
+    if (x < -700) {
       x -= 2;
       start7 = true;
       beeSound.stop();
