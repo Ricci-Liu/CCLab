@@ -29,7 +29,6 @@ let o1 = 0, o2 = 0, o3 = 0, o4 = 0;
 
 
 function preload() {
-  click = loadImage("../image/click.png");
   myFont = loadFont("../font/cuteFont.ttf");
   text6 = loadSound("../text/6.m4a");
   move = loadSound("../audio/short.mp3");
@@ -105,9 +104,6 @@ function draw() {
   text('Is my own special grace', width / 2, 270);
   pop();
   if (start6 == true) {
-    if (x < 300) {
-      image(click, width / 3, height / 2 + 50, 60, 60);
-    }
     if (!beeSound.isPlaying()) {
       beeSound.setVolume(0.5);
       beeSound.play();
