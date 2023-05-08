@@ -132,47 +132,47 @@ function draw() {
 
 
 
-  //if (start5 == true) {
-  if (x < 300) {
-    image(click, width / 3, height / 2 + 50, 100, 100);
-  }
-  if (!night.isPlaying()) {
-    night.play();
-  }
-  if (!hot.isPlaying()) {
-    hot.play();
-  }
-  night.setVolume(nightS);
-  hot.setVolume(morningS);
-  fade++;
-  if (w < 20) {
-    w += 2;
-  } else {
-
-    canMove = true;
-    s -= 0.2;
-    b += 0.2;
-
-    if (o > 0) {
-      o -= 0.3;
+  if (start5 == true) {
+    if (x < 300) {
+      image(click, width / 3, height / 2 + 50, 100, 100);
     }
-    moonH -= 0.5;
+    if (!night.isPlaying()) {
+      night.play();
+    }
+    if (!hot.isPlaying()) {
+      hot.play();
+    }
+    night.setVolume(nightS);
+    hot.setVolume(morningS);
+    fade++;
+    if (w < 20) {
+      w += 2;
+    } else {
 
-    if (moonH < -10) {
-      image(sun, width / 2 - 400, sunH, 300, 250);
-      if (sunH < 30) {
-        sunH += 0.5;
+      canMove = true;
+      s -= 0.2;
+      b += 0.2;
+
+      if (o > 0) {
+        o -= 0.3;
+      }
+      moonH -= 0.5;
+
+      if (moonH < -10) {
+        image(sun, width / 2 - 400, sunH, 300, 250);
+        if (sunH < 30) {
+          sunH += 0.5;
+        }
+      }
+      if (sunH > -300) {
+        nightS -= 0.002;
+        nightS = constrain(nightS, 0, 1);
+
+        morningS += 0.002;
+        morningS = constrain(morningS, 0, 1);
       }
     }
-    if (sunH > -300) {
-      nightS -= 0.002;
-      nightS = constrain(nightS, 0, 1);
-
-      morningS += 0.002;
-      morningS = constrain(morningS, 0, 1);
-    }
   }
-  //}
 
   //button.hide();
 
