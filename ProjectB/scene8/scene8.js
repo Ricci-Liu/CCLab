@@ -228,7 +228,7 @@ function draw() {
   image(frontGrass, 320, 770, 400, 180);
   pop();
 
-  if (x > 1500) {
+  if (x > 1400) {
     x += 2;
     up++;
     moveLeft = x + 20 * sin(up * 0.05);

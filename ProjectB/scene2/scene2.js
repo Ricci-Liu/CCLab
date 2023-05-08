@@ -207,7 +207,7 @@ function draw() {
       }
     }
 
-    if (x + d < 30) {
+    if (x + d < 60) {
       x -= 2;
       up++;
       moveLeft = x + 20 * sin(up * 0.05);

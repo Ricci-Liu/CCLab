@@ -219,7 +219,7 @@ function draw() {
 
 
   if (left == true) {
-    x -= 2;
+    x -= 2.5;
     r = false;
     up++;
     pressAble = false;
@@ -228,7 +228,7 @@ function draw() {
       move.play();
     }
   } else if (right == true) {
-    x += 2;
+    x += 2.5;
     r = true;
     pressAble = false;
     up++;
@@ -253,7 +253,7 @@ function draw() {
       image(lDead, x, height - h - dead, imageSize * 1.2, imageSize);
     }
     dead += 2;
-  } else if (x > 900) {
+  } else if (x > 830) {
     x += 2;
     start6 = true;
     night.stop();
@@ -266,19 +266,6 @@ function draw() {
   storeItem('6start', start6);
 }
 
-
-/*
-let state = false;
- 
-// if clicked
-// state = true;
- 
-if (state) {
-  volume += 0.1;
-  volume = constrain(volume, 0, 1);
-}
- 
-*/
 
 function mousePressed() {
   textAppear = true;

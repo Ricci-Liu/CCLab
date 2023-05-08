@@ -21,6 +21,8 @@ let textAppear = false;
 let o1 = 0, o2 = 0;
 let playText = true;
 let start1;
+let instrR = false;
+let instrL = false;
 
 
 
@@ -84,8 +86,23 @@ function draw() {
 
   pop();
   if (start1 == true) {
-    if (x < width * 2 / 3) {
+    if (x < width * 2 / 3 && instrR == false) {
       image(click, width / 3, height / 2 + 50, 60, 60);
+      textSize(25);
+      textFont(myFont);
+      fill(100);
+      text('Click anywhere to the right of the snail to move right ', width / 3 - 200, height / 2 + 30);
+    } else if (x < width * 2 / 3 && instrR == true && instrL == false) {
+      image(click, width / 3 - 300, height / 2 + 50, 60, 60);
+      textSize(25);
+      textFont(myFont);
+      fill(100);
+      text('Click anywhere to the left of the snail to move left ', width / 3 - 380, height / 2 + 30);
+    } else {
+      textSize(25);
+      textFont(myFont);
+      fill(100);
+      text('Move around and see what happens!', width / 2 - 370, height / 2 + 30);
     }
 
     ellipse(x + imageSize / 2.5, height * 3 / 4 + 30 + 100, shadow, 30);
@@ -206,7 +223,7 @@ function mousePressed() {
     if (mouseX - x > 180) {
       right = true;
       left = false;
-
+      instrR = true;
       setTimeout(function () {
         right = false;
         left = false;
@@ -215,7 +232,7 @@ function mousePressed() {
     } else {
       left = true;
       right = false;
-
+      instrL = true;
       setTimeout(function () {
         right = false;
         left = false;
